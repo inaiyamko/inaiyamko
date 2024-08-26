@@ -1,79 +1,48 @@
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
-    color: #e0e0e0;
-    background-color: #121212;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #1c1c1c;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #00bfff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main content */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #00bfff;
-    border-bottom: 2px solid #00bfff;
-    padding-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background-color: #1c1c1c;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav ul li {
-        margin: 10px 0;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gaming Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Gaming Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#forums">Forums</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to My Gaming Website!</h2>
+            <p>Latest updates and trends in the gaming world.</p>
+        </section>
+        <section id="news">
+            <h2>News</h2>
+            <p>Stay updated with the latest gaming news.</p>
+        </section>
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <p>Read our in-depth reviews of the latest games.</p>
+        </section>
+        <section id="forums">
+            <h2>Forums</h2>
+            <p>Join the conversation and discuss your favorite games.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Gaming Website</p>
+    </footer>
+</body>
+</html>
