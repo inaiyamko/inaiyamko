@@ -3,46 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Gaming Website</title>
+    <title>Epic Gaming Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Gaming Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#forums">Forums</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Epic Gaming Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#forums">Forums</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section id="home">
-            <h2>Welcome to My Gaming Website!</h2>
-            <p>Latest updates and trends in the gaming world.</p>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Epic Gaming Hub!</h2>
+                <p>Your ultimate source for the latest in gaming news, reviews, and community discussions.</p>
+                <a href="#news" class="cta-button">Discover More</a>
+            </div>
         </section>
-        <section id="news">
-            <h2>News</h2>
-            <p>Stay updated with the latest gaming news.</p>
+
+        <section id="news" class="news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <article class="news-item">
+                    <h3>Game of the Year Announced!</h3>
+                    <p>The highly anticipated game of the year has been announced. Get the scoop on what to expect!</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="news-item">
+                    <h3>Upcoming Game Releases</h3>
+                    <p>Check out the most exciting game releases coming this year. Stay ahead of the curve!</p>
+                    <a href="#">Read More</a>
+                </article>
+            </div>
         </section>
-        <section id="reviews">
-            <h2>Reviews</h2>
-            <p>Read our in-depth reviews of the latest games.</p>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2>Game Reviews</h2>
+                <article class="review-item">
+                    <h3>Fantastic RPG Adventure</h3>
+                    <p>A deep dive into the newest RPG that has taken the gaming world by storm. Is it worth the hype?</p>
+                    <a href="#">Read Review</a>
+                </article>
+                <article class="review-item">
+                    <h3>Action-Packed Shooter</h3>
+                    <p>Our review of the latest shooter game that's redefining fast-paced action. Find out if it’s a hit!</p>
+                    <a href="#">Read Review</a>
+                </article>
+            </div>
         </section>
-        <section id="forums">
-            <h2>Forums</h2>
-            <p>Join the conversation and discuss your favorite games.</p>
+
+        <section id="forums" class="forums">
+            <div class="container">
+                <h2>Community Forums</h2>
+                <p>Join discussions about your favorite games, share tips, and connect with other gamers.</p>
+                <a href="#" class="cta-button">Join the Conversation</a>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for any inquiries.</p>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? Reach out to us through the contact form below.</p>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 My Gaming Website</p>
+        <div class="container">
+            <p>&copy; 2024 Epic Gaming Hub. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
